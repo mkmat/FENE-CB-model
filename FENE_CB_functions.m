@@ -1,15 +1,15 @@
 function FENE_CB_functions 
 close all
 
-% filament diameter 
+% mean filament diameter 
 df_power       = @(kappa,t) 2.5191*(1+10*(0.6679./kappa)).*t.^(0.049554*(1+10*(-0.18709./kappa))); %  R2 = 0.9288
 df_logarithmic = @(kappa,t) 1.8987*(1+10*(0.90553./kappa)) + (0.22472*(1+10*(0.21091./kappa)))*log(t); %  R2 = 0.92898
 
-% filament length
+% mean filament length
 Lf_power       = @(kappa,t) 6.9913*(1+10*(0.22248./kappa)).*t.^(0.053751*(1+10*(0.17802./kappa))); %  R2 = 0.66928
 Lf_logarithmic = @(kappa,t) 4.9098*(1+10*(0.087762./kappa)) + (0.70121*(1+10*(0.45222./kappa)))*log(t); %  R2 = 0.6687
 
-% filament length divided by filament diameter
+% mean filament length divided by mean filament diameter
 Lfdivdf_power       = @(kappa,t) 2.7657*(1+10*(-0.33456./kappa)).*t.^(0.0041842*(1+10*(4.4991./kappa))); %  R2 = 0.17253
 Lfdivdf_logarithmic = @(kappa,t) 2.7336*(1+10*(-0.34733./kappa)) + (0.012263*(1+10*(3.9344./kappa)))*log(t); %  R2 = 0.1721
 
