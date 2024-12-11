@@ -2,6 +2,8 @@
 
 # Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers
 
+Martin Kröger, Clarisse Luap, Patrick Ilg
+
 ## Movies
 
 If your browser does not play the movies, download them using a right-click (save link as ..). 
@@ -22,29 +24,32 @@ If your browser does not play the movies, download them using a right-click (sav
 | [movie I](https://www.complexfluids.ethz.ch/MK/2024-FENE-CB/kappa=5-tw=0-copy=6-chain-color.mp4) | 5 | 6 | 0 | 5&times; 10<sup>4</sup>  | percolated cylinder|
 | [movie J](https://www.complexfluids.ethz.ch/MK/2024-FENE-CB/kappa=20-tw=0-copy-1-chain-color.mp4) | 20 | 1 | 0 | 5&times; 10<sup>4</sup>  | coarsening dynamics|
 
+All movies have been created by C.L. using [Ovito](https://www.ovito.org/manual). 
+
 ## Logarithmic and power-law fits
 
 We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities (described within the script) versus waiting time (t<sub>w</sub>) and/or bending stiffness (kappa). Below are simple examples on how to make use of the function. 
 
-### Plot the radius of gyration versus waiting time for 6 different kappa values, using the logarithmic fits 
+#### Plot the radius of gyration versus waiting time for 6 different kappa values, using the logarithmic fits 
 
       figure;
       tw = 10.^linspace(0,5,200); 
       for kappa = [10 20 30 50 75 100]; semilogx(tw,Rg_power(kappa,tw),'k.-'); hold on; end
 
-### Plot the radius of gyration versus waiting time for 6 different kappa values, using the power-law fits 
+#### Plot the radius of gyration versus waiting time for 6 different kappa values, using the power-law fits 
       
       % Simple Example: Rg (logarithmic fit) versus time for different kappa
       figure;
       tw = 10.^linspace(0,5,200); 
       for kappa = [10 20 30 50 75 100]; semilogx(tw,Rg_logarithmic(kappa,tw),'k.-'); hold on; end
 
-### Plot the radius of gyration versus kappa at three different waiting times using the power-law fits: 
+#### Plot the radius of gyration versus kappa at three different waiting times using the power-law fits: 
       
       figure;
       kappa = linspace(10,100,100);
       for tw = [1e2 1e4 1e5]; plot(kappa,Rg_power(kappa,t),'k.-'); hold on; end
 
-### Calculating averages, extrapolations
+#### Calculating averages, extrapolations
 
 With the functions at hand, you can calculate time-averaged mean values to rate the effect of a chosen averaging interval on the mean values, or to extrapolate quantities to a later waiting time. As the fits are based on data for &kappa;&in;[0,100] and *t*<sub>w</sub>&in;[10<sup>4</sup>,10<sup>6</sup>] the predictions far outside these regimes must be regarded as  crude estimates.
+
