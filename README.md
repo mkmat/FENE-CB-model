@@ -46,7 +46,6 @@ We fitted the ensemble-averaged time series using the logarithmic and power-law 
 
 #### Plot the radius of gyration versus waiting time for 6 different kappa values, using the power-law fits 
       
-      % Simple Example: Rg (logarithmic fit) versus time for different kappa
       figure;
       tw = 10.^linspace(0,5,200); 
       for kappa = [10 20 30 50 75 100]; semilogx(tw,Rg_logarithmic(kappa,tw),'k.-'); hold on; end
