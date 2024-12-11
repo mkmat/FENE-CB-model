@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 # mean filament diameter 
 df_power       = lambda kappa,t: 2.5191*(1+10*(0.6679/kappa))*t**(0.049554*(1+10*(-0.18709/kappa))); #   R2 = 0.9288
@@ -108,18 +108,21 @@ ell0_logarithmic = lambda kappa,t: 8.7192*(1+10*(4.3371/kappa)) + (3.5287*(1+10*
 
 #  Example: Rg (power-law fit) versus time for different kappa 
 plt.figure()
-t = 10**range(0,5,200)
+t = np.power(10,np.linspace(0,5,200))
 for kappa in [10,20,30,50,75,100]:
     plt.semilogx(t,Rg_power(kappa,t),'k.-')
+plt.show()
 
 #  Example: Rg (logarithmic fit) versus time for different kappa
 plt.figure()
-t = 10**range(0,5,200)
+t = np.power(10,np.linspace(0,5,200))
 for kappa in [10,20,30,50,75,100]:
     plt.semilogx(t,Rg_logarithmic(kappa,t),'k.-') 
+plt.show()
 
 #  Example Rg (power-law fit) versus kappa at three different times
 plt.figure()
-kappa = range(10,100,100)
-for t in [1e2 1e4 1e5]:
-    plt.plot(kappa,Rg_power(kappas,t),'k.-')
+kappa = np.linspace(10,100,100)
+for t in [1e2,1e4,1e5]:
+    plt.plot(kappa,Rg_power(kappa,t),'k.-')
+plt.show()
