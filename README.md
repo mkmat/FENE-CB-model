@@ -1,4 +1,6 @@
-# FENE-CB-model - Supplementary Material
+# Supplementary Material
+
+# Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers
 
 ## Movies
 
@@ -18,26 +20,29 @@
 | [movie I](https://www.complexfluids.ethz.ch/MK/2024-FENE-CB/kappa=5-tw=0-copy=6-chain-color.mp4) | 5 | 6 | 0 | 5&times; 10<sup>4</sup>  | percolated cylinder|
 | [movie J](https://www.complexfluids.ethz.ch/MK/2024-FENE-CB/kappa=20-tw=0-copy-1-chain-color.mp4) | 20 | 1 | 0 | 5&times; 10<sup>4</sup>  | coarsening dynamics|
 
-## Logarithmic fits
+## Logarithmic and power-law fits
 
-We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities versus time (t) and/or bending stiffness (kappa). 
+We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities versus time (t) and/or bending stiffness (kappa). Below are simple examples on how to make use of the function. 
 
+### Plot the radius of gyration versus time for 6 different kappa values, using the logarithmic fit 
 
-      % Example: Rg (power-law fit) versus time for different kappa 
+      % Simple Example: Rg (power-law fit) versus time for different kappa 
       figure;
       t = 10.^linspace(0,5,200); 
       for kappa = [10 20 30 50 75 100]
         semilogx(t,Rg_power(kappa,t),'k.-'); hold on; 
       end
+
+### Plot the radius of gyration versus time for 6 different kappa values: 
       
-      % Example: Rg (logarithmic fit) versus time for different kappa
+      % Simple Example: Rg (logarithmic fit) versus time for different kappa
       figure;
       t = 10.^linspace(0,5,200); 
       for kappa = [10 20 30 50 75 100]
         semilogx(t,Rg_logarithmic(kappa,t),'k.-'); hold on; 
       end
       
-      % Example Rg (power-law fit) versus kappa at three different times
+      % Simple Example Rg (power-law fit) versus kappa at three different times
       figure;
       kappas = linspace(10,100,100);
       for t = [1e2 1e4 1e5];
