@@ -122,7 +122,7 @@ end
 
 % Example Rg (power-law fit) versus kappa at three different times
 figure;
-kappas = linspace(10,100,100);
+kappa = linspace(10,100,100);
 for t = [1e2 1e4 1e5];
-  plot(kappas,Rg_power(kappas,t),'k.-'); hold on; 
+  plot(kappa,Rg_power(kappa,t),'k.-'); hold on; 
 end
