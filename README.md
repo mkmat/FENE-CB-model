@@ -51,5 +51,5 @@ We fitted the ensemble-averaged time series using the logarithmic and power-law 
 
 #### Calculating averages, extrapolations
 
-With the functions at hand, you can calculate time-averaged mean values to rate the effect of a chosen averaging interval on the mean values, or to extrapolate quantities to a later waiting time. As the fits are based on data for &kappa;&in;[0,100] and *t*<sub>w</sub>&in;[10<sup>4</sup>,10<sup>6</sup>] the predictions far outside these regimes must be regarded as  crude estimates.
+With the functions at hand, you can calculate time-averaged mean values to rate the effect of a chosen averaging interval on the mean values, or to extrapolate quantities to a later waiting time. As the fits are based on data for &kappa;&in;[0,100] and *t*<sub>w</sub>&in;[10<sup>4</sup>,10<sup>6</sup>] the predictions far outside these regimes must be regarded as  crude estimates. For example, extrapolating the number of edges (E) to unity makes sense, while extrapolating them to zero is certainly over-stressing the fit function. 
 
