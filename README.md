@@ -1,4 +1,4 @@
-# FENE-CB-model
+# FENE-CB-model - Supplementary Material
 
 ## Movies
 
