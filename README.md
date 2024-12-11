@@ -4,6 +4,8 @@
 
 ## Movies
 
+If your browser does not play the movies, download them using a right-click (save link as ..). 
+
 | Movie | &kappa; (kappa) | realization | t<sub>w</sub> | duration | content |
 | ---- | ---- | ----  |------------------ | ----  | -----------------------------------------------------------------------   |
 |[movie A](https://www.complexfluids.ethz.ch/MK/2024-FENE-CB/kappa=50-tw=1e5-copy=1-rupture.gif) |  50 | 1 | 1.28&times; 10<sup>6</sup> | 1.5&times; 10<sup>5</sup> |  filament rupture event
@@ -22,7 +24,7 @@
 
 ## Logarithmic and power-law fits
 
-We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities versus waiting time (t<sub>w</sub>) and/or bending stiffness (kappa). Below are simple examples on how to make use of the function. 
+We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities (described within the script) versus waiting time (t<sub>w</sub>) and/or bending stiffness (kappa). Below are simple examples on how to make use of the function. 
 
 ### Plot the radius of gyration versus waiting time for 6 different kappa values, using the logarithmic fits 
 
@@ -42,3 +44,7 @@ We fitted the ensemble-averaged time series using the logarithmic and power-law 
       figure;
       kappa = linspace(10,100,100);
       for tw = [1e2 1e4 1e5]; plot(kappa,Rg_power(kappa,t),'k.-'); hold on; end
+
+### Calculating averages, extrapolations
+
+With the functions at hand, you can calculate time-averaged mean values to rate the effect of a chosen averaging interval on the mean values, or to extrapolate quantities to a later waiting time. As the fits are based on data for &kappa;&in;[0,100] and *t*<sub>w</sub>&in;[10<sup>4</sup>,10<sup>6</sup>] the predictions far outside these regimes must be regarded as  crude estimates.
