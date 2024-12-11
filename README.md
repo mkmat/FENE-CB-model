@@ -24,27 +24,21 @@
 
 We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities versus time (t) and/or bending stiffness (kappa). Below are simple examples on how to make use of the function. 
 
-### Plot the radius of gyration versus time for 6 different kappa values, using the logarithmic fit 
+### Plot the radius of gyration versus time for 6 different kappa values, using the logarithmic fits 
 
-      % Simple Example: Rg (power-law fit) versus time for different kappa 
       figure;
-      t = 10.^linspace(0,5,200); 
-      for kappa = [10 20 30 50 75 100]
-        semilogx(t,Rg_power(kappa,t),'k.-'); hold on; 
-      end
+      tw = 10.^linspace(0,5,200); 
+      for kappa = [10 20 30 50 75 100]; semilogx(tw,Rg_power(kappa,tw),'k.-'); hold on; end
 
-### Plot the radius of gyration versus time for 6 different kappa values: 
+### Plot the radius of gyration versus time for 6 different kappa values, using the power-law fits 
       
       % Simple Example: Rg (logarithmic fit) versus time for different kappa
       figure;
-      t = 10.^linspace(0,5,200); 
-      for kappa = [10 20 30 50 75 100]
-        semilogx(t,Rg_logarithmic(kappa,t),'k.-'); hold on; 
-      end
+      tw = 10.^linspace(0,5,200); 
+      for kappa = [10 20 30 50 75 100]; semilogx(tw,Rg_logarithmic(kappa,tw),'k.-'); hold on; end
+
+### Plot the radius of gyration versus kappa at three different times using the power-law fits: 
       
-      % Simple Example Rg (power-law fit) versus kappa at three different times
       figure;
-      kappas = linspace(10,100,100);
-      for t = [1e2 1e4 1e5];
-        plot(kappas,Rg_power(kappas,t),'k.-'); hold on; 
-      end
+      kappa = linspace(10,100,100);
+      for tw = [1e2 1e4 1e5]; plot(kappa,Rg_power(kappa,t),'k.-'); hold on; end
