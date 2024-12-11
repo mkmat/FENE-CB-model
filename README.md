@@ -4,7 +4,7 @@
 
 ## Movies
 
-| Movie | kappa | realization | t<sub>w</sub> | duration | content |
+| Movie | &kappa; (kappa) | realization | t<sub>w</sub> | duration | content |
 | ---- | ---- | ----  |------------------ | ----  | -----------------------------------------------------------------------   |
 |[movie A](https://www.complexfluids.ethz.ch/MK/2024-FENE-CB/kappa=50-tw=1e5-copy=1-rupture.gif) |  50 | 1 | 1.28&times; 10<sup>6</sup> | 1.5&times; 10<sup>5</sup> |  filament rupture event
 |[movie B](https://www.complexfluids.ethz.ch/MK/2024-FENE-CB/kappa=50-tw=1e5-copy=1-dframes=1.mp4) | 50 | 1 | 10<sup>5</sup> | 2&times; 10<sup>6</sup> |  displacements, &delta;t=5&times; 10^3|
@@ -22,7 +22,7 @@
 
 ## Logarithmic and power-law fits
 
-We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities versus time (t) and/or bending stiffness (kappa). Below are simple examples on how to make use of the function. 
+We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The script [FENE_CB_functions.m](FENE_CB_functions.m) offers simple functions that allow to evaluate or plot the various quantities versus waiting time (t<sub>w</sub>) and/or bending stiffness (kappa). Below are simple examples on how to make use of the function. 
 
 ### Plot the radius of gyration versus waiting time for 6 different kappa values, using the logarithmic fits 
 
