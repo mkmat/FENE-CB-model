@@ -28,7 +28,7 @@ All movies have been created by C.L. using [Ovito](https://www.ovito.org/manual)
 
 ## Logarithmic and power-law fits
 
-We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The scripts [FENE_CB_functions.m](FENE_CB_functions.m) (matlab) and [FENE_CB_functions.py](FENE_CB_functions.py) (python) offer inline functions that allow to evaluate or plot the various quantities (described within the script) versus waiting time (t<sub>w</sub>) and/or bending stiffness (kappa). Below are rudimentary examples on how to edit and make use of the scripts. 
+We fitted the ensemble-averaged time series using the logarithmic and power-law expressions mentioned in the manuscript. Both of them involve four parameters for each quantity. The scripts [FENE_CB_functions.m](FENE_CB_functions.m) ([matlab](https://ch.mathworks.com/)) and [FENE_CB_functions.py](FENE_CB_functions.py) ([python](https://www.python.org/)) offer inline functions that allow to evaluate or plot the various quantities (described within the script) versus waiting time (t<sub>w</sub>) and/or bending stiffness (kappa). Below are rudimentary examples on how to edit and make use of the scripts. 
 
 #### Using matlab, plot the radius of gyration versus waiting time for 6 different kappa values, using the logarithmic fits 
    
