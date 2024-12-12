@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # mean filament diameter 
 df_power       = lambda kappa,tw: 2.5191*(1+10*(0.6679/kappa))*tw**(0.049554*(1+10*(-0.18709/kappa))); #   R2 = 0.9288
-df_np_logarithmic = lambda kappa,tw: 1.8987*(1+10*(0.90553/kappa)) + (0.22472*(1+10*(0.21091/kappa)))*np.log(tw); #   R2 = 0.92898
+df_logarithmic = lambda kappa,tw: 1.8987*(1+10*(0.90553/kappa)) + (0.22472*(1+10*(0.21091/kappa)))*np.log(tw); #   R2 = 0.92898
 
 # mean filament length
 Lf_power       = lambda kappa,tw: 6.9913*(1+10*(0.22248/kappa))*tw**(0.053751*(1+10*(0.17802/kappa))); #   R2 = 0.66928
