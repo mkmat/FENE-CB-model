@@ -39,9 +39,9 @@ We fitted the ensemble-averaged time series using the logarithmic and power-law 
 #### Using python, plot the radius of gyration versus waiting time for 6 different kappa values, using the logarithmic fits 
    
       plt.figure()
-      t = np.power(10,np.linspace(0,5,200))
+      tw = np.power(10,np.linspace(0,5,200))
       for kappa in [10,20,30,50,75,100]:
-          plt.semilogx(t,Rg_power(kappa,t),'k.-')
+          plt.semilogx(t,Rg_power(kappa,tw),'k.-')
       plt.show()
 
 #### Plot the radius of gyration versus waiting time for 6 different kappa values, using the power-law fits 
