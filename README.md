@@ -2,7 +2,7 @@
 
 # Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers
 
-Martin Kröger, Clarisse Luap, Patrick Ilg
+[Martin Kröger](https://www.complexfluids.ethz.ch/), Clarisse Luap, [Patrick Ilg](https://www.reading.ac.uk/maths-and-stats/staff/patrick-ilg)
 
 ## Movies
 
