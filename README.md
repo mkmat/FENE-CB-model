@@ -4,6 +4,8 @@
 
 [Martin Kröger](https://www.complexfluids.ethz.ch/), [Clarisse Luap](https://www.scopus.com/authid/detail.uri?authorId=6507066994&origin=resultslist), [Patrick Ilg](https://www.reading.ac.uk/maths-and-stats/staff/patrick-ilg)
 
+Manuscript available at [preprints.org](https://preprints.org/)
+
 ## Movies
 
 If your browser does not play the movies, download them using a right-click (save link as ..). 
