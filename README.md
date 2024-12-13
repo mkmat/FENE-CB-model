@@ -4,7 +4,7 @@
 
 [Martin Kröger](https://www.complexfluids.ethz.ch/), [Clarisse Luap](https://www.scopus.com/authid/detail.uri?authorId=6507066994&origin=resultslist), [Patrick Ilg](https://www.reading.ac.uk/maths-and-stats/staff/patrick-ilg)
 
-Manuscript available at <a href="https://preprints.org/?condition_blocks=[{'value':'Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers','type':'keywords','operator':null},{'value':'Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers','type':'title','operator':'OR'}]&sort_field=relevance&sort_dir=desc&page=1)">preprints.org</a>
+Manuscript available at [preprints.org](preprints.org)
 
 ## Movies
 
