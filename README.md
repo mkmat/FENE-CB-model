@@ -64,13 +64,13 @@ With the functions at hand, you can calculate time-averaged mean values to rate 
 
 ## LAMMPS implementation 
 
-The FENE-CB model studied in this work is coveniently implemented in LAMMPS via 
+The FENE-CB model studied in this work is coveniently implemented in [LAMMPS](https://www.lammps.org/) via 
 
-      variable rc equal 1.359  # 
-      variable kappa equal 10
+      variable rc equal 1.359  # cutoff distance for nonbonded pairs of beads
+      variable kappa equal 10  # bending stiffness
       
       atom_style angle
-      read_data file.data nocoeff
+      read_data myfile.data nocoeff
       mass * 1.0
       pair_style lj/cut ${rc}
       pair_modify shift yes
@@ -86,4 +86,6 @@ The FENE-CB model studied in this work is coveniently implemented in LAMMPS via
       fix NVE all nve
       fix LANGEVIN all langevin 1 1 2 123456 zero yes
 
-where it is assumed that you have an initial configuration file.data at hand. The above can serve as the header of your LAMMPS input file. 
+      # run etc .. 
+
+where it is assumed that you have an initial configuration *myfile.data* at hand. The above can serve as the header of your LAMMPS input file. 
