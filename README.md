@@ -88,4 +88,4 @@ The FENE-CB model studied in this work is coveniently implemented in [LAMMPS](ht
 
       # run etc .. 
 
-where it is assumed that you have an initial configuration *myfile.data* at hand. The above can serve as the header of your LAMMPS input file. 
+where it is assumed that you have an initial configuration *myfile.data* at hand (if not, contact M.K.). The above can serve as the header of your LAMMPS input file. 
