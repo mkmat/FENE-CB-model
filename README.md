@@ -80,9 +80,11 @@ The FENE-CB model studied in this work is coveniently implemented in [LAMMPS](ht
       special_bonds fene
       angle_style cosine
       angle_coeff * ${kappa}
-   
+
+      timestep 0.005
       comm_modify cutoff 4.0
       neighbor 0.3 bin
+      
       fix NVE all nve
       fix LANGEVIN all langevin 1 1 2 123456 zero yes
 
