@@ -64,7 +64,7 @@ With the functions at hand, you can calculate time-averaged mean values to rate 
 
 ## LAMMPS implementation 
 
-The FENE-CB model studied in this work is coveniently implemented in [LAMMPS](https://www.lammps.org/) via 
+The FENE-CB model (manuscript section 4.1.1) studied in this work is coveniently implemented in [LAMMPS](https://www.lammps.org/) via 
 
       variable rc equal 1.359  # cutoff distance for nonbonded pairs of beads (corresponds to E_coh = 1.4)
       variable kappa equal 10  # bending stiffness
