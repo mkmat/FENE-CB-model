@@ -4,7 +4,7 @@
 
 [Martin Kröger](https://www.complexfluids.ethz.ch/), [Clarisse Luap](https://www.scopus.com/authid/detail.uri?authorId=6507066994&origin=resultslist), [Patrick Ilg](https://www.reading.ac.uk/maths-and-stats/staff/patrick-ilg)
 
-Manuscript available at [preprints.org](preprints.org)
+Preprint DOI: [10.20944/preprints202412.1254.v1](https://www.preprints.org/manuscript/202412.1254/v1) (Open Access)
 
 ## Movies
 
