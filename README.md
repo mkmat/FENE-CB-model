@@ -1,10 +1,12 @@
-# Supplementary Material
+# Supplementary Material (movies and scripts)
 
 # Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers
 
 [Martin Kröger](https://www.complexfluids.ethz.ch/), [Clarisse Luap](https://www.scopus.com/authid/detail.uri?authorId=6507066994&origin=resultslist), [Patrick Ilg](https://www.reading.ac.uk/maths-and-stats/staff/patrick-ilg)
 
 Article DOI [10.1039/D4SM01479K](https://doi.org/10.1039/D4SM01479K) (Open Access)
+
+Additional [Supplementary Information](https://www.rsc.org/suppdata/d4/sm/d4sm01479k/d4sm01479k1.pdf) (Methods etc.)
 
 ## Movies
 
