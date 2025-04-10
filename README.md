@@ -1,12 +1,11 @@
 # Supplementary Material (movies and scripts)
 
-# Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers
+# Ultra-slow self-similar coarsening of physical fibrillar gels formed by semiflexible polymers 
+Article: [Soft Matter, *21* (2025) 2803-2825](https://doi.org/10.1039/D4SM01479K)  Open Access
 
-[Martin Kröger](https://www.complexfluids.ethz.ch/), [Clarisse Luap](https://www.scopus.com/authid/detail.uri?authorId=6507066994&origin=resultslist), [Patrick Ilg](https://www.reading.ac.uk/maths-and-stats/staff/patrick-ilg)
+Authors: [Martin Kröger](https://www.complexfluids.ethz.ch/), [Clarisse Luap](https://www.scopus.com/authid/detail.uri?authorId=6507066994&origin=resultslist), [Patrick Ilg](https://www.reading.ac.uk/maths-and-stats/staff/patrick-ilg)
 
-Article DOI [10.1039/D4SM01479K](https://doi.org/10.1039/D4SM01479K) (Open Access)
-
-Additional [Supplementary Information](https://www.rsc.org/suppdata/d4/sm/d4sm01479k/d4sm01479k1.pdf) (Methods etc.)
+Additional [Supplementary Information](https://www.rsc.org/suppdata/d4/sm/d4sm01479k/d4sm01479k1.pdf) provided by Soft Matter (Methods etc.)
 
 ## Movies
 
